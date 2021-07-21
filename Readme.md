@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Анна Смирнова](https://up.htmlacademy.ru/adaptive/23/user/1781931).
-* Наставник: [Михаил Данюшин].(https://htmlacademy.ru/profile/id225742)
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742)
 
 ---
 
