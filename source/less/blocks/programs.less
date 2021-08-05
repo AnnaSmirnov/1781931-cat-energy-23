@@ -1,6 +1,72 @@
 .programs__list {
   .list();
 }
+
 .programs__item {
-background-color: @basic_grey;
+  background-color: @basic_grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.programs__title {
+  .font(@oswald,400,24px,37px,@basic_black);
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-left: 91px;
+}
+
+.programs__title--slim {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/main_img/cat_slim.png");
+    width: 50px;
+    height: 53px;
+  }
+}
+
+.programs__title--mass {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/main_img/cat_mass.png");
+    width: 68px;
+    height: 50px;
+  }
+}
+
+.programs__text {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  .font-arial(14px,18px);
+  padding-right: 33px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @special_border;
+}
+
+.programs__button {
+  .font-oswald-uppercase(16px,16px);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 57px;
+  padding-top: 19px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  text-align: center;
+  position: relative;
+}
+
+.programs__button {
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/others_icon/catalog-link.png");
+    width: 24px;
+    height: 12px;
+    left: 110px;
+  }
 }

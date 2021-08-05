@@ -1,0 +1,49 @@
+.special__list {
+  .list();
+}
+.special__item {
+  .font-arial( 14px, 20px);
+  padding-left: 80px;
+  margin-bottom: 26px;
+  position: relative;
+}
+.special__item--composition {
+  &::before{
+    position: absolute;
+    content: "";
+    background-image: url("../img/main_img/Group-composition.png");
+    width: 60px;
+    height: 60px;
+    left: 0;
+  }
+}
+.special__item--form {
+  &::before{
+    position: absolute;
+    content: "";
+    background-image: url("../img/main_img/Group-form.png");
+    width: 60px;
+    height: 60px;
+    left: 0;
+  }
+}
+.special__item--food {
+  &::before{
+    position: absolute;
+    content: "";
+    background-image: url("../img/main_img/Group-food.png");
+    width: 60px;
+    height: 60px;
+    left: 0;
+  }
+}
+.special__item--result {
+  &::before{
+    position: absolute;
+    content: "";
+    background-image: url("../img/main_img/Group-result.png");
+    width: 60px;
+    height: 60px;
+    left: 0;
+  }
+}
