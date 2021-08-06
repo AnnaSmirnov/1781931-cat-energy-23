@@ -16,21 +16,23 @@
   padding-left: 91px;
 }
 
-.programs__title--slim {
+.programs__item--slim {
   &::before {
     position: absolute;
     content: "";
     background-image: url("../img/main_img/cat_slim.png");
+    top: 21px;
     width: 50px;
     height: 53px;
   }
 }
 
-.programs__title--mass {
+.programs__item--mass {
   &::before {
     position: absolute;
     content: "";
     background-image: url("../img/main_img/cat_mass.png");
+    top: 24px;
     width: 68px;
     height: 50px;
   }
@@ -58,9 +60,12 @@
   align-self: center;
   text-align: center;
   position: relative;
-}
 
-.programs__button {
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -68,5 +73,14 @@
     width: 24px;
     height: 12px;
     left: 110px;
+
+    &:hover {
+      position: absolute;
+      content: "";
+      background-image: url("../img/others_icon/catalog-link-hover.png");
+      width: 24px;
+      height: 12px;
+      left: 110px;
+    }
   }
 }

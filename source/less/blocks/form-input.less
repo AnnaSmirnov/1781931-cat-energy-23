@@ -1,0 +1,25 @@
+.form-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.form-input__input {
+  min-height: 45px;
+  width: 100%;
+  border: 1px solid @special_light-grey-border;
+  padding: 14px 15px;
+  margin-left: 11px;
+
+  &:hover {
+    border: 1px solid @special_grey;
+  }
+
+  &:focus {
+    border: 2px solid @special_dark-grey;
+  }
+}
+
+.error {
+  border: 2px solid @status_error;
+}

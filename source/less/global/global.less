@@ -1,23 +1,58 @@
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.29;
+  font-family: @arial;
+  color: @special_dark-grey;
+
+  background-color: @basic_white;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
-a {
-  text-decoration: none;
-}
 .page-body {
   min-width: 320px;
   min-height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
+
 .wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }

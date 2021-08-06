@@ -3,13 +3,12 @@
 }
 
 .product-show__img {
-  box-sizing: border-box;
   content: "";
   position: absolute;
   background: @special-light-grey;
   height: 3px;
   width: 30px;
-  top: -39px;
+  top: 39px;
   left: 145px;
 
 
@@ -25,14 +24,24 @@
 
 .product-show__title {
   .font-oswald-uppercase(16px,20px);
+  text-align: center;
   margin-top: 78px;
 }
 
 .product-show__desc {
   .font-arial(12px,16px);
+  text-align: center;
 }
 
 .product-show__button {
   background-color: @basic_grey;
   color: @special_dark-grey;
+
+  &:hover {
+    background-color: @special_-grey-border;
+  }
+
+  &:active {
+    color: @opacity_special_dark-grey;
+  }
 }
