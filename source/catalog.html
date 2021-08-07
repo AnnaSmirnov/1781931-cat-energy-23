@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт-энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header class="header">
     <div class="wrapper header__wrapper">
       <a class="header__logo" href="#">
         <img class="header__logo-image logo-image" src="img\site_logo\logo-mobile.svg" width="34" height="38" alt="Логотип компании">
         <img class="header__logo-name logo-name" src="img\site_logo\logo-text.svg" width="101" height="18" alt="cat energy">
       </a>
+      <button class="header__nav-button" type="button"></button>
       <nav class="header__nav nav">
-        <button class="header__nav-button" type="button" aria-label="открыть меню"></button>
-        <ul class="nav-list">
-          <li class="nav__item"><a href="index.html">Главная</a></li>
-          <li class="nav__item nav__item--current"><a href="#" >Каталог продукции</a></li>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--current"><a href="#">Главная</a></li>
+          <li class="nav__item"><a href="catalog.html" >Каталог продукции</a></li>
           <li class="nav__item"><a href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
@@ -27,7 +28,7 @@
         <ul class="main-catalog__list">
           <li class="main-catalog__item product">
             <a href="#">
-              <img class="product__image" src="" width="" height="" alt="">
+              <img class="product__image" src="img/catalog/catalog-1-desktop 1.png" width="68px" height="86px" alt="маленькая оранжевая упаковка корма">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="product__list">
@@ -48,7 +49,7 @@
           </li>
           <li class="main-catalog__item product">
             <a href="#">
-              <img class="product__image" src="" width="" height="" alt="">
+              <img class="product__image" src="img/catalog/catalog-2-desktop 1.png" width="84px" height="100px" alt="большая оранжевая упаковка корма">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="product__list">
@@ -69,7 +70,7 @@
           </li>
           <li class="main-catalog__item product">
             <a href="#">
-              <img class="product__image" src="" width="" height="" alt="">
+              <img class="product__image" src="img/catalog/catalog-3-desktop.png" width="68px" height="78px" alt="маленькая зеленая упаковка корма">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="product__list">
@@ -90,7 +91,7 @@
           </li>
           <li class="main-catalog__item product">
             <a href="#">
-              <img class="product__image" src="" width="" height="" alt="">
+              <img class="product__image" src="img/catalog/catalog-4-desktop 1.png" width="84px" height="100px" alt="большая зеленая упаковка корма">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="product__list">
@@ -111,7 +112,7 @@
           </li>
           <li class="main-catalog__item product">
             <a href="#">
-              <img class="product__image" src="" width="" height="" alt="">
+              <img class="product__image" src="img/catalog/catalog-5-desktop.png" width="68px" height="78px" alt="маленькая синяя упаковка корма">
               <h3 class="product__title">Cat Energy slim 500 г</h3>
             </a>
             <dl class="product__list">
@@ -132,7 +133,7 @@
           </li>
           <li class="main-catalog__item product">
             <a href="#">
-              <img class="product__image" src="" width="" height="" alt="">
+              <img class="product__image" src="img/catalog/catalog-6-desktop.png" width="84px" height="100px" alt="большая синяя упаковка корма">
               <h3 class="product__title">Cat Energy slim 1000 г</h3>
             </a>
             <dl class="product__list">
@@ -153,7 +154,7 @@
           </li>
           <li class="main-catalog__item product">
             <a href="#">
-              <img class="product__image" src="" width="" height="" alt="">
+              <img class="product__image" src="img/catalog/catalog-7-desktop.png" width="72px" height="84px" alt="большая фиолетовая упаковка корма">
               <h3 class="product__title">Cat Energy slim 500 г</h3>
             </a>
             <dl class="product__list">
@@ -173,6 +174,7 @@
             <a class="product__button button" href="#">заказать</a>
           </li>
           <li class="main-catalog__item product product-show">
+            <span class="product-show__img"></span>
             <h3 class="product-show__title">Показать еще 100500 товаров</h3>
             <p class="product-show__desc">На самом деле вкусов гораздо больше!</p>
             <a class="product-show__button button" href="#">показать все</a>
@@ -182,7 +184,7 @@
       <section class="more-catalog">
         <h2 class="more-catalog__title">Дополнительные товары</h2>
         <ul class="more-catalog__list">
-          <li class="card-more__item card-more">
+          <li class="more-catalog__item card-more">
             <h3 class="card-more__title">Сахарозаменитель</h3>
             <dl class="card-more__list">
               <dt class="card-more__amount">1 упаковка (100 г)</dt>
@@ -190,7 +192,7 @@
             </dl>
             <a class="card-more__button button" href="#">заказать</a>
           </li>
-          <li class="card-more__item card-more">
+          <li class="more-catalog__item card-more">
               <h3 class="card-more__title">питьевая вода</h3>
             <dl class="card-more__list">
               <dt class="card-more__amount">5 литров</dt>
@@ -198,7 +200,7 @@
             </dl>
             <a class="card-more__button button" href="#">заказать</a>
           </li>
-          <li class="card-more__item card-more">
+          <li class="more-catalog_item card-more">
               <h3 class="card-more__title">молоко</h3>
             <dl class="card-more__list">
               <dt class="card-more__amount">1 литр</dt>
@@ -206,7 +208,7 @@
             </dl>
             <a class="card-more__button button" href="#">заказать</a>
           </li>
-          <li class="card-more__item card-more">
+          <li class="more-catalog__item card-more">
               <h3 class="card-more__title">витамины</h3>
             <dl class="card-more__list">
               <dt class="card-more__amount">1 упаковка (30 г)</dt>
@@ -219,19 +221,19 @@
           <p class="more-catalog__promo-text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--background">
         <div class="wrapper contacts__wrapper">
           <div class="contacts__info">
             <p class="contacts__cooperation">приглашаем к сотрудничеству дилеров!</p>
             <address class="contacts__address">
-              <p>ул. Большая Конюшенная, д. 19/8</p>
+              <p>ул. Большая Конюшенная,&nbspд.&nbsp19/8</p>
               <p>Санкт-Петербург</p>
             </address>
             </div>
         </div>
         <div class="contacts__map">
           <a href="https://goo.gl/maps/uh2JAcid24yAcrAWA">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2140355230194!2d30.320930644442388!3d59.93894818036376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627301703264!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2140355230194!2d30.320930644442388!3d59.93894818036376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627301703264!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
           </a>
         </div>
       </section>

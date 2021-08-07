@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт-энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="header">
       <div class="wrapper header__wrapper">
         <a class="header__logo" href="#">
           <img class="header__logo-image logo-image" src="img\site_logo\logo-mobile.svg" width="34" height="38" alt="Логотип компании">
           <img class="header__logo-name logo-name" src="img\site_logo\logo-text.svg" width="101" height="18" alt="cat energy">
         </a>
+        <button class="header__nav-button" type="button"></button>
         <nav class="header__nav nav">
-          <button class="header__nav-button" type="button" aria-label="открыть меню"></button>
-          <ul class="nav-list">
-            <li class="nav__item"><a href="index.html">Главная</a></li>
+          <ul class="nav__list">
+            <li class="nav__item nav__item--current"><a href="#">Главная</a></li>
             <li class="nav__item"><a href="catalog.html" >Каталог продукции</a></li>
-            <li class="nav__item nav__item--current"><a href="#">Подбор программы</a></li>
+            <li class="nav__item"><a href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <h1>Подбор программы</h1>
       <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+        <h1 class="form__title">Подбор программы</h1>
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <fieldset class="form__data data">
           <legend class="form__legend visually-hidden">данные кота</legend>
@@ -33,11 +34,11 @@
               <input class="form-input__input" type="text" id="name_cat" name="name_cat" placeholder="БАРСИК">
             </li>
             <li class="data__item form-input">
-              <label class="form-input__label" for="weight_cat">Вес (кг):*</label>
+              <label class="form-input__label" for="weight_cat">Вес&nbsp(кг):*</label>
               <input class="form-input__input" tupe="number" id="weight_cat" name="weight_cat" placeholder="7">
             </li>
             <li class="data__item form-input">
-              <label class="form-input__label" for="age_cat">Возраст (лет):</label>
+              <label class="form-input__label" for="age_cat">Возраст&nbsp(лет):</label>
               <input class="form-input__input" tupe="number" id="age_cat" name="age_cat" placeholder="7">
             </li>
           </ul>
@@ -63,7 +64,7 @@
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <ul class="user-contacts__list">
             <li class="user-contacts__item form-input">
-              <label class="form-input__label" for="email">E-mail:*</label>
+              <label class="form-input__label" for="email">E-&nbspmail:*</label>
               <input class="form-input__input" type="email" id="email" name="e-mail" placeholder="kuklachev@gmail.com">
             </li>
             <li class="user-contacts__item form-input">
@@ -76,7 +77,7 @@
           <legend class="form__legend">
             <label for="comment">Комментарий</label>
           </legend>
-          <textarea id="comment">Расскажите обо всех повадках кота</textarea>
+          <textarea id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__more more-products">
           <legend class="form__legend">Дополнительно</legend>
@@ -102,19 +103,19 @@
         <button class="form__button button" type="submit">отправить заявку</button>
         <small class="form__note">* — Обязательные поля</small>
       </form>
-      <section class="contacts">
+      <section class="contacts contacts--background">
         <div class="wrapper contacts__wrapper">
           <div class="contacts__info">
             <p class="contacts__cooperation">приглашаем к сотрудничеству дилеров!</p>
             <address class="contacts__address">
-              <p>ул. Большая Конюшенная, д. 19/8</p>
+              <p>ул. Большая Конюшенная,&nbspд.&nbsp19/8</p>
               <p>Санкт-Петербург</p>
             </address>
             </div>
         </div>
         <div class="contacts__map">
           <a href="https://goo.gl/maps/uh2JAcid24yAcrAWA">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2140355230194!2d30.320930644442388!3d59.93894818036376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627301703264!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2140355230194!2d30.320930644442388!3d59.93894818036376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627301703264!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
           </a>
         </div>
       </section>

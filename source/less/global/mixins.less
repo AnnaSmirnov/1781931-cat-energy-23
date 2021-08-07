@@ -1,0 +1,65 @@
+.list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mp-zero() {
+  margin: 0;
+  padding: 0;
+}
+
+.bf() {
+  position: absolute;
+  content: "";
+}
+
+.flex_center() {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.wrapper-mobile() {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.font( @family, @weight, @size, @lineheight, @color, @style: normal) {
+  font-family: @family;
+  font-weight: @weight;
+  font-size: @size;
+  line-height: @lineheight;
+  color: @color;
+  font-style: @style;
+}
+
+.font-oswald( @size, @lineheight) {
+  font-size: @size;
+  line-height: @lineheight;
+  font-family: @oswald;
+  font-weight: normal;
+  font-style: normal;
+  color: @basic_black;
+  text-transform: none;
+}
+
+.font-oswald-uppercase( @size, @lineheight) {
+  font-size: @size;
+  line-height: @lineheight;
+  font-family: @oswald;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  color: @basic_black;
+}
+
+.font-arial( @size, @lineheight) {
+  font-size: @size;
+  line-height: @lineheight;
+  font-family: @arial;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  color: @special_dark-grey;
+}
