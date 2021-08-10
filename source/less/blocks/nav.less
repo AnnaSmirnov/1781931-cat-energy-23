@@ -3,6 +3,17 @@
   .list();
   border-bottom: 1px solid @border_menu;
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    border: none;
+  }
+}
+
+.nav__item {
+  &--current {
+    border-bottom: 2px solid @basic_green;
+  }
 }
 
 .nav__item a {
@@ -13,4 +24,8 @@
   justify-content: center;
   align-items: center;
   min-height: 66px;
+
+  @media (min-width: @tablet-width) {
+    .font-oswald-uppercase(18px,24px);
+  }
 }
