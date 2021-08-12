@@ -24,7 +24,7 @@
     </div>
   </header>
     <main>
-      <section class="main-catalog">
+      <section class="main-catalog wrapper">
         <h1 class="main-catalog__title">Каталог продукции</h1>
         <ul class="main-catalog__list">
           <li class="main-catalog__item product">
@@ -184,58 +184,60 @@
       </section>
       <section class="more-catalog">
         <h2 class="more-catalog__title">Дополнительные товары</h2>
-        <ul class="more-catalog__list">
-          <li class="more-catalog__item card-more">
-            <h3 class="card-more__title">Сахарозаменитель</h3>
-            <dl class="card-more__list">
-              <dt class="card-more__amount">1 упаковка (100 г)</dt>
-              <dd class="card-more__price">200 Р.</dd>
-            </dl>
-            <a class="card-more__button button" href="#">заказать</a>
-          </li>
-          <li class="more-catalog__item card-more">
-              <h3 class="card-more__title">питьевая вода</h3>
-            <dl class="card-more__list">
-              <dt class="card-more__amount">5 литров</dt>
-              <dd class="card-more__price">50 Р.</dd>
-            </dl>
-            <a class="card-more__button button" href="#">заказать</a>
-          </li>
-          <li class="more-catalog_item card-more">
-              <h3 class="card-more__title">молоко</h3>
-            <dl class="card-more__list">
-              <dt class="card-more__amount">1 литр</dt>
-              <dd class="card-more__price">100 Р.</dd>
-            </dl>
-            <a class="card-more__button button" href="#">заказать</a>
-          </li>
-          <li class="more-catalog__item card-more">
-              <h3 class="card-more__title">витамины</h3>
-            <dl class="card-more__list">
-              <dt class="card-more__amount">1 упаковка (30 г)</dt>
-              <dd class="card-more__price">300 Р.</dd>
-            </dl>
-            <a class="card-more__button button" href="#">заказать</a>
-          </li>
-        </ul>
-        <div class="more-catalog__promo">
-          <p class="more-catalog__promo-text">Закажите все и получите чехол для кота в подарок!</p>
-        </div>
-      </section>
-      <section class="contacts contacts--background">
-        <div class="wrapper contacts__wrapper">
-          <div class="contacts__info">
-            <p class="contacts__cooperation">приглашаем к сотрудничеству дилеров!</p>
-            <address class="contacts__address">
-              <p>ул. Большая Конюшенная,&nbspд.&nbsp19/8</p>
-              <p>Санкт-Петербург</p>
-            </address>
-            </div>
-        </div>
-        <div class="contacts__map">
-          <a href="https://goo.gl/maps/uh2JAcid24yAcrAWA">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2140355230194!2d30.320930644442388!3d59.93894818036376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627301703264!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-          </a>
+        <div class="wrapper more-catalog__wrapper">
+          <ul class="more-catalog__list">
+            <li class="more-catalog__item card-more">
+              <h3 class="card-more__title">Сахарозаменитель</h3>
+              <dl class="card-more__list">
+                <dt class="card-more__amount">1 упаковка (100 г)</dt>
+                <dd class="card-more__price">200 Р.</dd>
+              </dl>
+              <a class="card-more__button button" href="#">заказать</a>
+            </li>
+            <li class="more-catalog__item card-more">
+                <h3 class="card-more__title">питьевая вода</h3>
+              <dl class="card-more__list">
+                <dt class="card-more__amount">5 литров</dt>
+                <dd class="card-more__price">50 Р.</dd>
+              </dl>
+              <a class="card-more__button button" href="#">заказать</a>
+            </li>
+            <li class="more-catalog__item card-more">
+                <h3 class="card-more__title">молоко</h3>
+              <dl class="card-more__list">
+                <dt class="card-more__amount">1 литр</dt>
+                <dd class="card-more__price">100 Р.</dd>
+              </dl>
+              <a class="card-more__button button" href="#">заказать</a>
+            </li>
+            <li class="more-catalog__item card-more">
+                <h3 class="card-more__title">витамины</h3>
+              <dl class="card-more__list">
+                <dt class="card-more__amount">1 упаковка (30 г)</dt>
+                <dd class="card-more__price">300 Р.</dd>
+              </dl>
+              <a class="card-more__button button" href="#">заказать</a>
+            </li>
+          </ul>
+          <div class="more-catalog__promo">
+            <p class="more-catalog__promo-text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </section>
+        <section class="contacts contacts--background">
+          <div class="wrapper contacts__wrapper">
+            <div class="contacts__info">
+              <p class="contacts__cooperation">приглашаем к сотрудничеству дилеров!</p>
+              <address class="contacts__address">
+                <p>ул. Большая Конюшенная,&nbspд.&nbsp19/8</p>
+                <p>Санкт-Петербург</p>
+              </address>
+              </div>
+          </div>
+          <div class="contacts__map">
+            <a href="https://goo.gl/maps/uh2JAcid24yAcrAWA">
+              <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2140355230194!2d30.320930644442388!3d59.93894818036376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627301703264!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+            </a>
+          </div>
         </div>
       </section>
     </main>

@@ -1,19 +1,53 @@
 
-.more-catalog {
-  .wrapper-mobile();
+.more-catalog__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+    justify-content: space-between;
+  }
 }
 
 .more-catalog__title {
   .font-oswald(24px,24px);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+
+  &::before,
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 2px;
+    background: @basic_green;
+  }
 }
+
 
 .more-catalog__list {
   .list();
 }
 
+.more-catalog__item {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 288px 244px;
+    gap: 38px;
+    width: 896px;
+  }
+}
+
 .more-catalog__promo {
   min-height: 289px;
   background-image: url("../img/background/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    min-height: 245px;
+  }
 }
 
 .more-catalog__promo-text {
