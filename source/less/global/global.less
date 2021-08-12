@@ -49,10 +49,33 @@ img {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1440px;
+  }
 }
 
 .wrapper {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    max-width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
 }

@@ -1,5 +1,12 @@
 .programs__list {
   .list();
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .programs__item {
@@ -7,6 +14,11 @@
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    min-height: 372px;
+    padding-left: 52px;
+  }
 }
 
 .programs__title {
@@ -14,16 +26,32 @@
   text-transform: uppercase;
   padding-top: 30px;
   padding-left: 91px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding-left: 53px;
+  }
 }
 
 .programs__item--slim {
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../img/main_img/cat_slim.png");
+    background-image: url("../img/main_img/cat_slim.svg");
     top: 21px;
     width: 50px;
     height: 53px;
+
+    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+      background-size: 200px 210px;
+      width: 200px;
+      height: 210px;
+      top: 81px;
+      right: 62px;
+    }
+
+    @media (max-width: @desktop-width) {
+      top: 41px;
+    }
   }
 }
 
@@ -31,10 +59,18 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../img/main_img/cat_mass.png");
+    background-image: url("../img/main_img/cat_mass.svg");
     top: 24px;
     width: 68px;
     height: 50px;
+
+    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+      background-size: 269px 200px;
+      width: 269px;
+      height: 200px;
+      top: 135px;
+      right: 28px;
+    }
   }
 }
 
@@ -46,6 +82,10 @@
   padding-right: 33px;
   padding-bottom: 23px;
   border-bottom: 1px solid @special_border;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    max-width: 340px;
+  }
 }
 
 .programs__button {
@@ -61,6 +101,11 @@
   text-align: center;
   position: relative;
 
+
+  @media (min-width: @tablet-width) {
+    padding-top: 29;
+    padding-bottom: 30px;
+  }
 
   &:active {
     opacity: 0.3;

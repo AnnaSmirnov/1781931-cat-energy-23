@@ -4,6 +4,25 @@
     url("../img/background/index-background-cat-green.svg"),
     url("../img/background/index-background-cat.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.promo__block {
+  @media (min-width: @tablet-width) {
+    max-width: 610px;
+    padding-left: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .promo__title {
@@ -12,6 +31,11 @@
   padding-top: 27px;
   text-align: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    .font(@oswald,400,60px,60px,@basic_black);
+    text-align: left;
+  }
 }
 
 .promo__text {
@@ -20,4 +44,19 @@
   margin-bottom: 29px;
   text-align: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    .font(@oswald,400,20px,20px,@basic_black);
+    text-align: left;
+  }
+}
+
+.promo__button {
+  @media (min-width: @mobile-width-only) {
+    order: 5;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+  }
 }

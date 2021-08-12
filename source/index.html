@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт-энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,10 +27,12 @@
     <h1 class="visually-hidden">Магазин питания для котов "Cat Energy"</h1>
     <section class="promo">
       <div class="wrapper promo__wrapper">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__text">Занялся собой? Займись котом!</p>
+        <div  class="promo__block">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+          <a href="form.html" class="promo__button button">подобрать программу</a>
+        </div>
         <img class="promo__image" src="img/background/promo.png" width="280" height="270" alt="упаковка корма для кота">
-        <a href="form.html" class="promo__button button">подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -70,47 +73,53 @@
     </section>
     <section class="example">
       <div class="wrapper example__wrapper">
-        <h2 class="example__title title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__number">
-              5 КГ
-            </dt>
-            <dd class="example__description">
-              снижение веса
-            </dd>
+        <div class="example__info">
+          <h2 class="example__title title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="example__block">
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__number">
+                  5 КГ
+                </dt>
+                <dd class="example__description">
+                  снижение веса
+                </dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__number">
+                  60 ДНЕЙ
+                </dt>
+                <dd class="example__description">
+                  затрачено времени
+                </dd>
+              </div>
+            </dl>
+            <p class="example__costs">
+              Затраты на питание:
+              <span>15 000 РУБ.</span>
+            </p>
           </div>
-          <div class="example__item">
-            <dt class="example__number">
-              60 ДНЕЙ
-            </dt>
-            <dd class="example__description">
-              затрачено времени
-            </dd>
+        </div>
+        <div class="example__slide">
+          <ul class="cat-slides">
+            <li class="cat-slide__item cat-slide__item--slide cat-slide__item--current">
+              <img class="cat-slide__image" src="img/slider_cat/cat-fat.png" width="311" height="232" alt="пухленький котик">
+            </li>
+            <li class="cat-slide__item  cat-slide__item--slide">
+              <img class="cat-slide__image" src="img/slider_cat/cat-skinny.png" width="251" height="244" alt="стройный котик">
+            </li>
+          </ul>
+          <div class="example__switch switch">
+            <button class="switch__button switch__button--before" type="button">было</button>
+            <div class="switch__scroll scroll">
+              <div class="scroll__scale"></div>
+              <button class="scroll__toggle" type="button">
+                <span class="scroll__dot"></span>
+              </button>
+            </div>
+            <button class="switch__button switch__button--after" type="button">стало</button>
           </div>
-        </dl>
-        <p class="example__costs">
-          Затраты на питание:
-          <span>15 000 РУБ.</span>
-        </p>
-        <ul class="example__slide cat-slides">
-          <li class="cat-slide__item cat-slide__item--slide cat-slide__item--current">
-            <img class="cat-slide__image" src="img/slider_cat/cat-fat.png" width="311" height="232" alt="пухленький котик">
-          </li>
-          <li class="cat-slide__item  cat-slide__item--slide">
-            <img class="cat-slide__image" src="img/slider_cat/cat-skinny.png" width="251" height="244" alt="стройный котик">
-          </li>
-        </ul>
-        <div class="example__switch switch">
-          <button class="switch__button switch__button--before" type="button">было</button>
-          <div class="switch__scroll scroll">
-            <div class="scroll__scale"></div>
-            <button class="scroll__toggle" type="button">
-              <span class="scroll__dot"></span>
-            </button>
-          </div>
-          <button class="switch__button switch__button--after" type="button">стало</button>
         </div>
       </div>
     </section>
