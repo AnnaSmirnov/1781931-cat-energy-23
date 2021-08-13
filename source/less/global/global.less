@@ -24,13 +24,16 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.29;
+  line-height: 18px;
   font-family: @arial;
   color: @special_dark-grey;
 
   background-color: @basic_white;
 
-  -webkit-font-smoothing: antialiased;
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 a {
@@ -61,20 +64,19 @@ img {
 
 .wrapper {
   width: 100%;
-  max-width: 320px;
+  max-width: 767px;
   margin: 0 auto;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    max-width: 708px;
+    max-width: 1439px;
     margin: 0 auto;
     padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    max-width: 1220px;
     margin: 0 auto;
     padding: 0 110px;
   }

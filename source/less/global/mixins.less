@@ -20,9 +20,23 @@
   align-items: center;
 }
 .wrapper-mobile() {
-  width: 320px;
+  width: 100%;
+  max-width: 767px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.wrapper-tablet() {
+  width: 100%;
+  max-width: 1439px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.wrapper-desktop() {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 110px;
 }
 
 .font( @family, @weight, @size, @lineheight, @color, @style: normal) {
