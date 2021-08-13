@@ -1,14 +1,37 @@
 
-.promo__wrapper {
-  background-image:
-    url("../img/background/index-background-cat-green.svg"),
-    url("../img/background/index-background-cat.jpg");
+.promo {
+  background-image: url("../img/background/index-background-mobil.png");
+  background-position: center top;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 767px;
+  position: relative;
+
+
+  &::before {
+    .bf();
+    background-color: @background_green;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 302px;
+    width: 100%;
+    max-width: 767px;
+    z-index: 2;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: none;
+
+    &::before {
+      display: none;
+    }
   }
+}
+
+.promo__wrapper {
+  position: relative;
+  z-index: 10;
 
   @media (min-width: @desktop-width) {
     display: flex;
