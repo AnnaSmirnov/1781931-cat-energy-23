@@ -1,5 +1,16 @@
 .social__item {
   height: 50px;
   width: 50px;
-  .flex_center();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    fill: @special_grey-2;
+
+    &:hover {
+      fill: @basic_green;
+    }
+  }
 }

@@ -1,65 +1,151 @@
+
+.special__title {
+  .font-oswald (36px, 40px);
+  margin-bottom: 38px;
+
+  .tablet({
+    .font-oswald (60px, 60px);
+    margin-bottom: 72px;
+  });
+}
+
 .special__list {
   .list();
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 37px;
-  }
+  .tablet ({
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:37px;
+  });
 
-  @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+  .desktop ({
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  });
 }
 
 .special__item {
   .font-arial( 14px, 20px);
   padding-left: 80px;
-  margin-bottom: 26px;
+  min-height: 60px;
   position: relative;
+
+  .tablet ({
+  min-height: 280px;
+  width: 250px;
+  padding-top: 131px;
+  padding-left: 0;
+  });
 }
 
 .special__item--composition {
   &::before {
-    position: absolute;
-    content: "";
+    .bf();
     background-image: url("../img/main_img/group-composition.png");
     width: 60px;
     height: 60px;
     left: 0;
+
+    .tablet ({
+      top: 40px;
+    });
   }
+
+  .tablet ({
+    &::after {
+      .bf();
+      background-image: url("../img/main_img/number-1.svg");
+      background-repeat: no-repeat;
+      width: 112px;
+      height: 280px;
+      top: 40px;
+      right: 20px;
+      z-index: -1;
+    }
+  });
 }
 
 .special__item--form {
   &::before {
-    position: absolute;
-    content: "";
+    .bf();
     background-image: url("../img/main_img/group-form.png");
     width: 60px;
     height: 60px;
     left: 0;
+
+    .tablet ({
+      top: 40px;
+    });
   }
+
+  .tablet ({
+    .mp-zero();
+    &::after {
+      .bf();
+      background-image: url("../img/main_img/number-2.svg");
+      background-repeat: no-repeat;
+      width: 134px;
+      height: 280px;
+      top: 40px;
+      right: 23px;
+      z-index: -1;
+    }
+  });
 }
 
 .special__item--food {
   &::before {
-    position: absolute;
-    content: "";
+    .bf();
     background-image: url("../img/main_img/group-food.png");
     width: 60px;
     height: 60px;
     left: 0;
+
+    .tablet ({
+      top: 40px;
+    });
   }
+
+  .tablet ({
+    &::after {
+      .bf();
+      background-image: url("../img/main_img/number-3.svg");
+      background-repeat: no-repeat;
+      width: 134px;
+      height: 280px;
+      top: 40px;
+      right: 3px;
+      z-index: -1;
+    }
+  });
 }
 
 .special__item--result {
   &::before {
-    position: absolute;
-    content: "";
+    .bf();
     background-image: url("../img/main_img/group-result.png");
     width: 60px;
     height: 60px;
     left: 0;
+
+    .tablet ({
+      top: 40px;
+    });
   }
+
+  .tablet ({
+    &::after {
+      .bf();
+      background-image: url("../img/main_img/number-4.svg");
+      background-repeat: no-repeat;
+      width: 136px;
+      height: 280px;
+      top: 40px;
+      right: 1px;
+      z-index: -1;
+    }
+  });
 }

@@ -3,10 +3,14 @@
 }
 
 .footer__wrapper {
-  @media (min-width: @tablet-width) {
+  display: flex;
+  flex-direction: column;
+
+  .tablet ({
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-  }
+  });
 }
 
 .footer__logo {
@@ -19,15 +23,24 @@
 
 .footer__social {
   .list();
-  align-items: center;
   border-bottom: 1px solid @special_border;
-  .flex_center();
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
 }
 
-.footer__developer a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 22px 0;
+.footer__developer {
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0;
+  }
+
+  span {
+    .tablet ({
+      padding-right: 22px;
+    });
+  }
 }

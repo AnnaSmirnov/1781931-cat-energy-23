@@ -13,20 +13,26 @@
           <img class="header__logo-image logo-image" src="img\site_logo\logo-mobile.svg" width="34" height="38" alt="Логотип компании">
           <img class="header__logo-name logo-name" src="img\site_logo\logo-text.svg" width="101" height="18" alt="cat energy">
         </a>
-        <button class="header__nav-button" type="button"></button>
-        <nav class="header__nav nav">
+        <nav class="header__nav nav nav--closed">
           <ul class="nav__list">
-            <li class="nav__item nav__item--current"><a href="#">Главная</a></li>
-            <li class="nav__item"><a href="catalog.html" >Каталог продукции</a></li>
-            <li class="nav__item"><a href="form.html">Подбор программы</a></li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="#">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link" href="catalog.html" >Каталог продукции</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link" href="form.html">Подбор программы</a>
+            </li>
           </ul>
+          <button class="nav__button" type="button"></button>
         </nav>
       </div>
     </header>
     <main>
       <form class="form" method="POST" action="https://echo.htmlacademy.ru">
         <h1 class="form__title">Подбор программы</h1>
-        <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <div class="form__block wrapper">
           <fieldset class="form__data data">
             <legend class="form__legend visually-hidden">данные кота</legend>

@@ -8,53 +8,54 @@
 }
 
 .form__title {
-  .wrapper-mobile();
+  .wrapper();
   .font-oswald(36px,36px);
   border-top: 1px solid @special_border;
   padding-top: 26px;
   padding-bottom: 40px;
+  text-align: left;
 
-  @media (min-width: @tablet-width) {
-    .wrapper-tablet();
-  }
-
-  @media (min-width: @desktop-width) {
-    .wrapper-desktop();
-  }
+  .tablet ({
+    .font-oswald(60px,60px);
+    border: none;
+    margin-bottom: 54px;
+  });
 }
 
 .form__text {
-  .wrapper-mobile();
+  .wrapper();
   .font-oswald-uppercase(14px,18px);
   margin-bottom: 15px;
+  text-align: left;
 
-  @media (min-width: @tablet-width) {
-    .wrapper-tablet();
-  }
-
-  @media (min-width: @desktop-width) {
-    .wrapper-desktop();
-  }
+  .tablet ({
+    .font-oswald-uppercase(20px,30px);
+    margin-bottom: 66px;
+  });
 }
 
 .form__legend {
   .font-oswald(24px,26px);
+
+  .tablet ({
+    .font-oswald(36px,36px);
+  });
 }
 
 .form__block {
-  @media (min-width: @desktop-width) {
+  .desktop ({
     display: grid;
     grid-template-columns: repeat(2, 570px);
     gap: 80px;
-  }
+  });
 }
 
 .form__user ul {
-  @media (min-width: @desktop-width) {
+  .desktop ({
     display: grid;
     grid-template-columns: repeat(2, 570px);
     gap: 80px;
-  }
+  });
 }
 
 .form__button-block {
@@ -65,13 +66,13 @@
   border: none;
   width: 100%;
 
-  @media (min-width: @tablet-width) {
+  .tablet ({
     width: 285px;
-  }
+  });
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     width: 568px;
-  }
+  });
 }
 
 .form__note {
