@@ -30,10 +30,10 @@ body {
 
   background-color: @basic_white;
 
-  @media (min-width: @tablet-width) {
+  .tablet ({
     font-size: 16px;
     line-height: 24px;
-  }
+  });
 }
 
 a {
@@ -66,18 +66,26 @@ img {
   width: 100%;
   max-width: 767px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 @padding--mobile;
 
   @media (min-width: @tablet-width) {
     width: 100%;
     max-width: 1439px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 @padding--tablet;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
     margin: 0 auto;
-    padding: 0 110px;
+    padding: 0 @padding--desktop;
   }
+}
+
+.title {
+  .font-oswald(36px, 40px);
+
+  .tablet({
+    .font-oswald(60px, 60px);
+  });
 }

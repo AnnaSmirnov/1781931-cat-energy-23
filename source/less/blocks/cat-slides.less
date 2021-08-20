@@ -3,7 +3,11 @@
   width: 280px;
   height: 245px;
   .mp-zero();
-  box-sizing: border-box;
+
+  .tablet ({
+    width: 708px;
+    height: 620px;
+  });
 }
 
 .cat-slide__item {
@@ -22,5 +26,16 @@
 .cat-slide__image {
   position: absolute;
   z-index: 2;
-  background-color: @background_gray;
+
+  .tablet ({
+    &--fat {
+      width: 677px;
+      height: 620px;
+    }
+
+    &--skinny {
+      width: 545px;
+      height: 620px;
+    }
+  });
 }
