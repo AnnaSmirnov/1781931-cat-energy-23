@@ -1,3 +1,46 @@
 .title {
-  .font(@oswald,400,36px,40px,@basic_black);
+  .font-oswald(36px, 40px);
+
+  .tablet({
+    .font-oswald(60px, 60px);
+  });
+}
+
+.title--green-line {
+  .font-oswald(24px,26px);
+  display: block;
+  width: 100%;
+  position: relative;
+
+  .tablet({
+    .font-oswald(36px,36px);
+    padding-left: @padding--tablet;
+  });
+
+  .desktop({
+    padding-left: 74px;
+  });
+
+  &::before,
+  ::after {
+    .content();
+    top: calc(50% + 2px);
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: @basic_green;
+  }
+}
+
+.title_text {
+  position: relative;
+  z-index: 20;
+  background-color: @basic_white;
+  padding-right: 22px;
+  padding-left: @padding--mobile;
+
+  .tablet({
+    padding-right: 42px;
+    padding-left: 39px;
+  });
 }

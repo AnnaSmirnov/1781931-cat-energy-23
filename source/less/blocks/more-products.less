@@ -2,15 +2,18 @@
   .list();
   padding-left: 46px;
 
-  @media (min-width: @tablet-width) {
+  .tablet ({
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 42px;
     padding-left: 59px;
-  }
+    margin-bottom: 54px;
+  });
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     grid-template-columns: repeat(4, 1fr);
-  }
+    margin-bottom: 66px;
+  });
 }
 
 .more-products__label {
@@ -19,28 +22,31 @@
   flex-wrap: wrap;
   align-items: center;
   cursor: pointer;
-  padding-bottom: 24px;
+
+  .mobile ({
+    padding-bottom: 25px;
+  });
 }
 
 .more-products__input + .more-products__label {
   &::before {
-    .bf();
+    .content();
     width: 28px;
     height: 28px;
     border: 1px solid @special_grey;
     left: -55px;
 
-    @media (min-width: @tablet-width) {
+    .tablet ({
       width: 38px;
       height: 38px;
       left: -60px;
-    }
+    });
   }
 }
 
 .more-products__input:checked + .more-products__label {
   &::after {
-    .bf();
+    .content();
     background-image: url("../img/others_icon/checkbox-icon.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -48,10 +54,10 @@
     height: 14px;
     left: -50px;
 
-    @media (min-width: @tablet-width) {
+    .tablet ({
       width: 24px;
       height: 19px;
       left: -52px;
-    }
+    });
   }
 }

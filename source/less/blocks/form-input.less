@@ -1,7 +1,13 @@
+
 .form-input {
+  color: @special_dark-grey;
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+
+  .tablet ({
+    margin-bottom: 20px;
+  });
 }
 
 .form-input__input {
@@ -10,6 +16,11 @@
   border: 1px solid @special_light-grey-border;
   padding: 14px 15px;
   margin-left: 11px;
+
+  .tablet ({
+  padding: 12px 20px 12px;
+  margin-left: 14px;
+  });
 
   &:hover {
     border: 1px solid @special_grey;
