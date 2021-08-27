@@ -29,7 +29,7 @@
 }
 
 .programs__title {
-  .mp-zero();
+  .offset_zero();
   .font-oswald-uppercase(24px,37px);
   padding-left: 71px;
   margin-bottom: 29px;
@@ -47,7 +47,7 @@
 
 .programs__item--slim {
   &::before {
-    .bf();
+    .content();
     background-image: url("../img/main_img/cat_slim.svg");
     top: 21px;
     width: 50px;
@@ -73,7 +73,7 @@
 
 .programs__item--mass {
   &::before {
-    .bf();
+    .content();
     background-image: url("../img/main_img/cat_mass.svg");
     top: 24px;
     width: 68px;
@@ -150,14 +150,14 @@
   }
 
   &::after {
-    .bf();
+    .content();
     background-image: url("../img/others_icon/catalog-link.png");
     width: 24px;
     height: 12px;
     left: 110px;
 
     &:hover {
-      .bf();
+      .content();
       background-image: url("../img/others_icon/catalog-link-hover.png");
       width: 24px;
       height: 12px;

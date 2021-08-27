@@ -9,20 +9,20 @@
   <body class="page-body">
     <header class="header">
       <div class="wrapper header__wrapper">
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="index.html">
           <img class="header__logo-image logo-image" src="img\site_logo\logo-mobile.svg" width="34" height="38" alt="Логотип компании">
           <img class="header__logo-name logo-name" src="img\site_logo\logo-text.svg" width="101" height="18" alt="cat energy">
         </a>
         <nav class="header__nav nav nav--closed">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--current" href="#">Главная</a>
+              <a class="nav__link nav__link--current" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
               <a class="nav__link nav__link" href="catalog.html" >Каталог продукции</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link" href="form.html">Подбор программы</a>
+              <a class="nav__link nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
           <button class="nav__button" type="button"></button>
@@ -33,7 +33,7 @@
       <form class="form" method="POST" action="https://echo.htmlacademy.ru">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
-        <div class="form__block wrapper">
+        <div class="form__block">
           <fieldset class="form__data data">
             <legend class="form__legend visually-hidden">данные кота</legend>
             <ul class="data__list">
@@ -70,8 +70,10 @@
           </fieldset>
         </div>
         <fieldset class="form__user user-contacts">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <div class="form__wrapper wrapper">
+          <legend class="form__legend title title--green-line">
+            <span class="title_text wrapper">Контактные данные (владельца&nbspкота)</span>
+          </legend>
+          <div class="form__wrapper">
             <ul class="user-contacts__list">
               <li class="user-contacts__item form-input">
                 <label class="form-input__label" for="email">E-&nbspmail:*</label>
@@ -85,16 +87,20 @@
         </div>
         </fieldset>
         <fieldset class="form__coments coments">
-          <div class="form__wrapper wrapper">
-            <legend class="form__legend">
-              <label for="comment">Комментарий</label>
-            </legend>
+          <legend class="form__legend title title--green-line">
+            <label for="comment">
+              <span class="title_text">Комментарий</span>
+            </label>
+          </legend>
+          <div class="form__wrapper">
             <textarea id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="form__more more-products">
-          <legend class="form__legend">Дополнительно</legend>
-          <div class="form__wrapper wrapper">
+          <legend class="form__legend title title--green-line">
+            <span class="title_text">Дополнительно</span>
+          </legend>
+          <div class="form__wrapper">
             <ul class="more-products__list">
               <li class="more-products__item">
                 <input class="more-products__input visually-hidden" type="checkbox" id="sugar" name="choice_sugar" checked>
@@ -115,7 +121,7 @@
             </ul>
           </div>
         </fieldset>
-        <div class="form__button-block form__wrapper wrapper">
+        <div class="form__button-block">
           <button class="form__button button" type="submit">отправить заявку</button>
           <small class="form__note">* — Обязательные поля</small>
         </div>
@@ -139,7 +145,7 @@
     </main>
     <footer class="footer">
       <div class="wrapper footer__wrapper">
-        <a class="footer__logo logo-name" href="#">
+        <a class="footer__logo logo-name" href="index.html">
           <img src="img\site_logo\logo-text.svg" width="128" height="24" alt="cat energy">
         </a>
         <ul class="footer__social social">

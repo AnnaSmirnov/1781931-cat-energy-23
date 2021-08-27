@@ -2,12 +2,24 @@
   width: 100%;
   min-height: 150px;
   resize: none;
-  border: none;
-  border-top: 1px solid @special_light-grey-border;
-  border-bottom: 1px solid @special_light-grey-border;
+  border: 1px solid @special_light-grey-border;
+
+  .tablet ({
+    min-height: 174px;
+  });
 
   &::placeholder {
     .font-oswald-uppercase(16px,18px);
-    text-align: center;
+    color: @special_dark-grey;
+    text-align: start;
+    padding-left: 15px;
+    padding-top: 10px;
+
+    .tablet ({
+      .font-oswald-uppercase(20px,30px);
+      color: @special_dark-grey;
+      text-align: start;
+      padding-left: 19px;
+    });
   }
 }

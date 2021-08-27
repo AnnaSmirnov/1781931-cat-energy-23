@@ -4,7 +4,7 @@
 
   &::before,
   &::after {
-    .bf();
+    .content();
     top: 0;
     left: 0;
     width: 100%;
@@ -19,7 +19,7 @@
   }
 
   &::after {
-    background-color: @background_green;
+    background-color: rgba(@basic_green, 85%);
   }
 
   .tablet({
@@ -38,7 +38,7 @@
 
     &::before,
     &::after {
-      margin-top: -112px;
+      margin-top: -192px;
       width: 50%;
       height: 100%;
       left: 50%;
@@ -69,7 +69,7 @@
 }
 
 .promo__title {
-  .mp-zero();
+  .offset_zero();
   .font(@oswald,400,36px,36px,@basic_white);
   max-width: 610px;
   padding-top: 27px;
