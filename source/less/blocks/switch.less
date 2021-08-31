@@ -3,11 +3,32 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 31px;
+
+  .tablet ({
+    padding-bottom: 33px;
+  });
 }
 
 .switch__button {
   border: none;
   cursor: pointer;
-  .font-oswald-uppercase(16px,20px);
-  padding: 10px 13px;
+  padding: 4px 10px;
+  background-color: inherit;
+
+  span {
+    .font-oswald-uppercase(16px,20px);
+
+    .tablet ({
+    .font-oswald-uppercase(20px,30px);
+    border-bottom: 1px dotted rgba(@basic_black, 0.24);
+
+    &:hover {
+      border-bottom: 1px solid rgba(@basic_black, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  });
+  }
 }
