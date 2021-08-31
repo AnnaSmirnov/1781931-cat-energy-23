@@ -31,12 +31,21 @@
     left: calc(50% - 34px);
     border: 1px solid @special_grey;
     border-radius: 50%;
+
+    &:hover {
+      box-shadow: 0 4px 4px 0 rgba(@basic_black, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(@basic_black, 0.2);
+    }
     });
 }
 
 .scroll__dot {
   .tablet ({
     position: absolute;
+    cursor: pointer;
     background-color: @basic_green;
     Width: 8px;
     Height: 8px;

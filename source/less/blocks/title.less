@@ -11,6 +11,7 @@
   display: block;
   width: 100%;
   position: relative;
+  z-index: -1;
 
   .tablet({
     .font-oswald(36px,36px);
@@ -24,6 +25,7 @@
   &::before,
   ::after {
     .content();
+    z-index: -2;
     top: calc(50% + 2px);
     left: 0;
     right: 0;
@@ -34,7 +36,7 @@
 
 .title_text {
   position: relative;
-  z-index: 20;
+  z-index: 2;
   background-color: @basic_white;
   padding-right: 22px;
   padding-left: @padding--mobile;
