@@ -1,9 +1,7 @@
 .button {
   background-color: @basic_green;
-  font-family: @oswald;
+  .font-oswald-uppercase( 14px, 18px);
   color: @basic_white;
-  text-transform: uppercase;
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -17,4 +15,9 @@
   &:active {
     color: rgba(@basic_white, 30%);
   }
+
+  .tablet ({
+    .font-oswald-uppercase( 20px, 20px);
+    color: @basic_white;
+  });
 }

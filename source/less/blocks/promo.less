@@ -1,4 +1,3 @@
-
 .promo {
   position: relative;
 
@@ -8,13 +7,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 302px;
+    min-height: 302px;
   }
 
   &::before {
     background-image: url("../img/background/index-background-mobile.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 65%;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
@@ -38,12 +37,11 @@
 
   .desktop({
     min-height: 694px;
-    margin-bottom: -110px;
+    margin-bottom: -115px;
 
     &::before,
     &::after {
-      margin-top: -192px;
-
+      margin-top: -195px;
       width: 50%;
       height: 100%;
       left: 50%;
@@ -52,6 +50,7 @@
 
     &::before {
       background-image: url("../img/background/index-background-desktop.png");
+      background-position: left;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/background/index-background-desktop@2x.png");
@@ -69,11 +68,11 @@
 
   .tablet ({
     align-items: flex-start;
-    padding-left: 90px;
+    margin-left: 89px;
   });
 
   .desktop  ({
-    padding-left: 80px;
+    padding-left: 99px;
   });
 }
 
@@ -81,21 +80,26 @@
   .offset_zero();
   .font(@oswald,400,36px,36px,@basic_white);
   max-width: 610px;
-  padding-top: 27px;
-  margin-bottom: 25px;
+  margin-top: 27px;
+  margin-bottom: 22px;
+  text-align: center;
 
   .tablet ({
     .font(@oswald,400,60px,60px,@basic_black);
-    margin-bottom: 41px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 42px;
   });
 
   .desktop ({
     max-width: 610px;
+    margin-top: 27px;
     margin-bottom: 40px;
   });
 }
 
 .promo__text {
+  .offset_zero();
   .font(@oswald,400,14px,14px,@basic_white);
   text-transform: uppercase;
   margin-bottom: 29px;
@@ -106,22 +110,25 @@
   });
 
   .desktop ({
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   });
 }
 
 .promo__image {
+  .mobile ({
+    margin-bottom: 5px;
+  });
   .tablet({
     margin-bottom: 0;
     position: absolute;
-    top: 253px;
-    left: calc(50% - 354px);
+    top: 250px;
+    left: calc(38% - 354px);
     z-index: -1;
   });
 
   .desktop({
     top: -55px;
-    left: 582px;;
+    left: 32.5%;
   });
 
   img {
@@ -139,9 +146,11 @@
 
 .promo__button {
   align-self: stretch;
+  min-height: 40px;
 
   .tablet ({
     width: 244px;
+    min-height: 54px;
     padding: 14px 26px;
   });
 }
