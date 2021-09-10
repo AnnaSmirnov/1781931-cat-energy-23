@@ -3,17 +3,25 @@
   min-height: 150px;
   resize: none;
   border: 1px solid @special_light-grey-border;
+  padding: 9px 10px 10px 15px;
+  margin-bottom: 24px;
 
   .tablet ({
+    margin-bottom: 65px;
     min-height: 174px;
   });
+
+  .desktop ({
+    margin-bottom: 65px;
+  });
+
 
   &::placeholder {
     .font-oswald-uppercase(16px,18px);
     color: @special_dark-grey;
     text-align: start;
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 9px;
 
     .tablet ({
       .font-oswald-uppercase(20px,30px);

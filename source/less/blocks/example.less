@@ -1,7 +1,6 @@
 .example {
   background-color: @background_gray;
   position: relative;
-  margin-top: 22px;
 
   .tablet ({
     background: @basic_white;
@@ -10,8 +9,14 @@
     .content();
     background: @background_gray;
     width: 100%;
-    height: 462px;
+    height: 43%;
     bottom: 0;
+  }
+  });
+
+  .desktop ({
+    &::before {
+    height: 69%;
   }
   });
 }
@@ -19,6 +24,7 @@
 .example__wrapper {
   position: relative;
   z-index: 10;
+
 
   .desktop ({
     display: grid;
@@ -29,23 +35,25 @@
 }
 
 .example__block {
-  padding-bottom: 22px;
+  padding-bottom: 26px;
 
   .tablet ({
     display: flex;
     justify-content: space-between;
-    padding-bottom: 51px;
+    padding-bottom: 62px;
   });
 
   .desktop ({
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
   });
 }
 
 .example__title {
   .offset_zero();
   padding-top: 27px;
+  margin-bottom: 33px;
 
   .tablet ({
     padding-top: 43px;
@@ -53,16 +61,19 @@
   });
 
   .desktop ({
+    padding-top: 69px;
     margin-bottom: 146px;
   });
 }
 
 .example__text {
-  .font-arial( 14px, 20px);
+  .font-arial( 14px, 18px);
+  margin-bottom: 25px;
 
   .tablet ({
     .font-arial( 16px, 24px);
     margin-bottom: 54px;
+    padding-right: 10px;
   });
   .desktop ({
     max-width: 440px;
@@ -86,13 +97,13 @@
   .flex_center();
   justify-content: center;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   &:first-of-type {
     margin-right: 32px;
 
     .tablet ({
-      margin-right: 42px;
+      margin-right: 45px;
     });
   }
 }
@@ -116,8 +127,8 @@
 
 .example__description {
   position: absolute;
-  top: 47px;
-  bottom: -2px;
+  top: 44px;
+
   .font-arial(12px,12px);
   background-color: @background_gray;
   margin-left: auto;
@@ -132,8 +143,7 @@
   .tablet ({
     background-color: @basic_white;
     .font-arial(14px,14px);
-    bottom: -10px;
-    margin-top: 8px;
+    margin-top: 12px;
   });
 
   .desktop ({
@@ -148,8 +158,13 @@
 
   .tablet ({
     .font-oswald-uppercase(20px,20px);
+    margin-top: 0;
     flex-direction: column;
     align-items: flex-end;
+
+    span {
+      padding-top: 10px;
+    }
   });
 
   .desktop ({
@@ -158,6 +173,7 @@
 
     span {
     margin-left: 63px;
+    margin-bottom: 0;
     };
   });
 }
@@ -166,17 +182,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  .list();
 
   .tablet ({
-    height: 620px;
+    min-height: 620px;
     position: relative;
+  });
+
+  .desktop ({
+    height: 100%;
+    align-items: flex-end;
+    padding-top: 9px;
   });
 }
 
 .example__switch {
   .tablet ({
-    bottom: 33px;
+    bottom: 15px;
     position: absolute;
     z-index: 10;
   });

@@ -6,6 +6,7 @@
   .tablet ({
     background-color: @basic_white;
     border: 2px solid @special_grey;
+    padding-left: 35px;
   });
 
   &::before,
@@ -32,19 +33,19 @@
 .product-show__title {
   .font-oswald-uppercase(16px,20px);
   text-align: center;
-  margin-top: 78px;
+  margin-top: 74px;
   margin-bottom: 8px;
 
   .tablet ({
     .font-oswald-uppercase(20px,24px);
     max-width: 150px;
-    margin-top: 161px;
+    margin-top: 156px;
     margin-bottom: 23px;
   });
 
   .desktop ({
     .font-oswald-uppercase(20px,22px);
-    margin-top: 161px;
+    margin-top: 160px;
   });
 }
 
@@ -56,10 +57,12 @@
 
   .tablet ({
     .font-arial(16px,18px);
+    margin-bottom: 85px;
   });
 }
 
 .product-show__button {
+  .font-oswald-uppercase(16px,20px);
   background-color: @basic_grey;
   color: @special_dark-grey;
   align-self: stretch;

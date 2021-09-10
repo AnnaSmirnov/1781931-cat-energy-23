@@ -1,5 +1,8 @@
 .card-more {
   border-bottom: 1px solid @special_grey;
+  border-left: 1px solid @special_grey;
+  border-right: 1px solid @special_grey;
+  border-top: none;
   padding-top: 13px;
   padding-bottom: 19px;
   display: flex;
@@ -10,19 +13,17 @@
   }
 
   .tablet ({
-    padding-top: 26px;
-    padding-bottom: 28px;
-    padding: 27px 38px;
+    padding: 27px 38px 28px 38px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 25px;
+    gap: 23px;
   });
 
   .desktop({
     border-left: none;
     border-right: none;
-    padding: 16px 0;
+    padding: 15px 0 16px 0;
     gap: unset;
     justify-content: space-between;
   });
@@ -32,7 +33,7 @@
   .font-oswald-uppercase(16px,16px);
   color: @special_dark-grey-2;
   .offset_zero();
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   .tablet ({
     .font-oswald-uppercase(20px,20px);
@@ -46,7 +47,7 @@
   .font-arial(14px,14px);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 
 
   .tablet ({
@@ -54,14 +55,35 @@
     margin-bottom: 0;
   });
 
-  .desktop({
+  .desktop ({
     margin-right: 38px;
     justify-content: space-between;
   });
 }
 
+.card-more__amount {
+  .desktop({
+    text-align: start;
+  });
+}
+
+.card-more__price {
+  .tablet ({
+    margin-left: 49px;
+  });
+
+  .desktop({
+    margin-left: 55px;
+  });
+}
+
 .card-more__button {
   min-width: 100%;
+
+  .tablet ({
+    .font-oswald-uppercase( 16px, 20px);
+    color: @basic_white;
+  });
 
   .desktop({
     min-width: 244px;
