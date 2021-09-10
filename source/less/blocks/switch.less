@@ -5,14 +5,19 @@
   padding-bottom: 31px;
 
   .tablet ({
-    padding-bottom: 33px;
+    bottom: 35px;
+  });
+
+  .desktop ({
+    align-items: right;
+    bottom: 33px;
   });
 }
 
 .switch__button {
   border: none;
   cursor: pointer;
-  padding: 4px 10px;
+  padding: 4px 12px;
   background-color: inherit;
 
   span {
@@ -29,6 +34,65 @@
     &:active {
       border-bottom: none;
     }
-  });
+    });
   }
+}
+
+.switch__scroll {
+  position: relative;
+  background-color: @basic_white;
+  height: 14px;
+  width: 83px;
+  border-radius: 6px;
+  border: 1px solid @special_grey;
+  margin-left: 8px;
+  margin-right: 5px;
+
+  .tablet ({
+  background-color: @spesial-scale-gray;
+  height: 6px;
+  width: 426px;
+  });
+}
+
+.switch__toggle {
+  position: absolute;
+  cursor: pointer;
+  background-color: @basic_green;
+  border: none;
+  height: 6px;
+  width: 32px;
+  border-radius: 6px;
+  margin: 3px 7px;
+
+  .tablet ({
+    background-color: @basic_white;
+    height: 32px;
+    width: 32px;
+    top: -16px;
+    left: calc(50% - 26px);
+    border: 1px solid @special_grey;
+    border-radius: 50%;
+
+    &:hover {
+      box-shadow: 0 4px 4px 0 rgba(@basic_black, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(@basic_black, 0.2);
+    }
+    });
+}
+
+.switch__dot {
+  .tablet ({
+    position: absolute;
+    cursor: pointer;
+    background-color: @basic_green;
+    Width: 8px;
+    Height: 8px;
+    top: 11px;
+    left: 11px;
+    border-radius: 50%;
+    });
 }

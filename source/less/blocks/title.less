@@ -13,6 +13,7 @@
   position: relative;
   z-index: -1;
 
+
   .tablet({
     .font-oswald(36px,36px);
     padding-left: @padding--tablet;
@@ -22,8 +23,7 @@
     padding-left: 74px;
   });
 
-  &::before,
-  ::after {
+  &::after {
     .content();
     z-index: -2;
     top: calc(50% + 2px);
@@ -41,8 +41,28 @@
   padding-right: 22px;
   padding-left: @padding--mobile;
 
+  .mobile ({
+    background-color: @basic_white;
+    display: inline-block;
+    max-width: 225px;
+
+    &--catalog {
+      display: inline;
+      max-width: none;
+    }
+  });
+
+
   .tablet({
     padding-right: 42px;
-    padding-left: 39px;
+    padding-left: 28px;
+
+    br {
+      display: none;
+    }
+  });
+
+  .desktop ({
+    padding-left: 70px;
   });
 }

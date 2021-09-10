@@ -15,17 +15,18 @@
     display: grid;
     grid-template-columns: 170px 200px;
     justify-content: space-between;
-    padding: 62px 42px 52px 42px;
+    padding: 65px 42px 54px 42px;
   });
 
   .desktop ({
     position: absolute;
     z-index: 9;
-    top: 95px;
+    top: 96px;
     width: 570px;
     height: 201px;
-    padding: 76px 66px 80px 50px;
+    padding: 65px 89px 50px 76px;
     background-color: @basic_white;
+    gap: 80px;
   });
 }
 
@@ -36,7 +37,7 @@
   margin-right: 12px;
 
   .tablet ({
-    .font-oswald-uppercase(20px,21px);
+    .font-oswald-uppercase(20px,22px);
   });
 }
 
@@ -50,16 +51,29 @@
   .tablet ({
     .font-arial(16px,20px);
     text-align: end;
+
+    p {
+    &:first-of-type {
+      padding-bottom: 20px;
+  }
+    }
+  });
+
+  .desktop ({
+    text-align: left;
   });
 }
 
 .contacts__map {
   width: 100%;
   max-width: 767px;
+  height: 362px;
   margin: 0 auto;
+  padding: 0;
 
   .tablet ({
     max-width: 1439px;
+    height: 400px;
     margin: 0 auto;
   });
 
@@ -76,6 +90,7 @@
   max-width: 767px;
   min-height: 362px;
   margin: 0 auto;
+  padding: 0;
 
   .tablet ({
     width: 100%;

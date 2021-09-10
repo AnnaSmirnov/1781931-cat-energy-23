@@ -1,6 +1,6 @@
 .product {
-  padding-top: 19px;
-  padding-bottom: 25px;
+  padding-top: 5px;
+  padding-bottom: 23px;
   min-height: 209px;
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -10,7 +10,7 @@
     background-color: @basic_grey;
     min-width: 324px;
     min-height: 430px;
-    padding: 2px 37px 39px;
+    padding: 2px 39px 39px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,44 +25,52 @@
 
 .product__image {
   width: 140px;
-  height: 144px;
+  height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .tablet({
-    margin-top: -44px;
-    margin-bottom: -44px;
+  img {
+    object-fit: contain;
+  }
+
+  .tablet ({
+    width: 168px;
+    width: 200;
+    position: relative;
+    top: -45px;
+    margin-bottom: -55px;
 
     img {
-      width: 170px;
+      width:170px;
       height: 200px;
-      object-fit: contain;
     }
   });
 
   .desktop ({
+    width: 172px;
+    height: 201px;
     margin-top: -51px;
-    margin-bottom: -51px;
+    margin-bottom: -65px;
+
     img {
       width: 172px;
       height: 201px;
-      object-fit: contain;
     }
   });
 }
+
 
 .product__info {
   .tablet ({
     display: flex;
     flex-direction: column;
-    margin-top: 34px;
-    margin-bottom: 33px;
+    margin-bottom: 25px;
     width: 100%;
   });
 
   .desktop ({
-    margin-top: 46px;
+
   });
 }
 
@@ -71,17 +79,21 @@
   color: @special_dark-grey-2;
   max-width: 76px;
   margin-top: 34px;
-  margin-bottom: 14px;
+  margin-bottom: 0;
 
-  h3 {
-    .font-oswald-uppercase(16px,20px);
-  }
+  .mobile ({
+    h3 {
+      .font-oswald-uppercase(16px,20px);
+      width: 61%;
+      margin-bottom: 14px;
+    }
+  });
 
   .tablet ({
     max-width: 145px;
     text-align: center;
     align-self: center;
-    margin-bottom: 21px;
+    margin-top: 55px;;
 
     h3 {
       .font-oswald-uppercase(20px,24px);
@@ -89,6 +101,7 @@
   });
 
   .desktop ({
+    margin-bottom: 7px;
     h3 {
       .font-oswald-uppercase(20px,21px);
     }
@@ -117,9 +130,10 @@
 }
 
 .product__button {
+  .font-oswald-uppercase(16px,20px);
+  color: @basic_white;
   grid-column: ~ "1/-1";
   grid-row: ~ "3/4";
-  margin-top: 13px;
   align-self: stretch;
   width: 100%;
 

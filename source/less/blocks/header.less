@@ -1,32 +1,30 @@
-
 .header__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-content: center;
   align-items: center;
   position: relative;
   z-index: 15;
   min-height: 66px;
+  margin-top: 0;
 
   .tablet({
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 62px;
     align-items: center;
-  });
-
-  .desktop({
-    margin-bottom: 74px;
   });
 }
 
 .header__logo {
   display: flex;
+  align-items: center;
   margin-right: auto;
 }
 
 .header__logo-image {
   margin-right: 56px;
+  margin-bottom: 10px;
 
   .tablet({
     margin-top: 24px;

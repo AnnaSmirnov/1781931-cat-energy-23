@@ -7,4 +7,31 @@
 
 .data__list {
   .list();
+  margin-bottom: 23px;
+
+  .tablet ({
+    margin-right: 36px;
+    margin-bottom: 72px;
+  });
+
+  .desktop ({
+    margin-right: 0;
+    margin-bottom: 0;
+  });
+}
+
+.data__item {
+  margin-bottom: 12px;
+
+  &:last-of-type {
+    margin-bottom: 22px;
+  }
+
+  .tablet ({
+    margin-bottom: 19px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  });
 }
