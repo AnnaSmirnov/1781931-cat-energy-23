@@ -3,16 +3,29 @@
   color: @special_dark-grey;
   display: flex;
   align-items: center;
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none; // Yeah, yeah everybody write about it
+  }
+
+  input[type='number'],
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+      appearance: none;
+      -moz-appearance: textfield;
+}
 }
 
 .form-input__input {
-  min-height: 45px;
+  height: 47px;
   width: 100%;
   border: 1px solid @special_light-grey-border;
   padding: 11px 15px;
   margin-left: 13px;
 
   .tablet ({
+    height: 52px;
   padding: 10px 20px 11px 20px;
   margin-left: 15px;
   });
