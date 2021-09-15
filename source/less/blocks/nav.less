@@ -5,6 +5,16 @@
     background-color: transparent;
     position: static;
   });
+
+  &--nojs {
+    margin-left: -@padding--mobile;
+    margin-right: -@padding--mobile;
+
+    .tablet({
+      margin-left: auto;
+      margin-right: 0;
+    });
+  }
 }
 
 .nav__list {

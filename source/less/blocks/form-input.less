@@ -37,11 +37,15 @@
   }
 
   &:focus {
-    border: 2px solid @special_dark-grey;
+    border: 1px solid @special_dark-grey;
     outline: 1px solid @special_dark-grey;
   }
 }
 
-.error {
-  border: 2px solid @status_error;
+.form-input__input--invalid {
+  border: 2px solid @status_error; //input-invalid
+}
+
+.form-input__input--valid {
+  border: 1px solid @special_dark-grey;
 }

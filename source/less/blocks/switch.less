@@ -73,13 +73,15 @@
     left: calc(50% - 26px);
     border: 1px solid @special_grey;
     border-radius: 50%;
+    box-shadow: 0 2px 3px 0 rgba(@basic_black, 0.1);
 
     &:hover {
-      box-shadow: 0 4px 4px 0 rgba(@basic_black, 0.25);
+      box-shadow: 0 3px 5px 0 rgba(@basic_black, 0.2);
     }
 
     &:active {
-      box-shadow: 0 3px 5px 0 rgba(@basic_black, 0.2);
+      border: 1px solid @basic_green;
+      box-shadow: 0 4px 4px 0 rgba(@basic_black, 0.25);
     }
     });
 }
