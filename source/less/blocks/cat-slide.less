@@ -34,21 +34,24 @@
 .cat-slide__image {
   position: absolute;
   z-index: 2;
-  object-fit: contain;
 
   .mobile ({
     &--fat {
-      width: 300px;
+      object-fit: cover;
+      width: 280px;
       height: 232px;
     }
 
     &--skinny {
-      width: 545px;
-      height: 520px;
+      object-fit: contain;
+      width: 280px;
+      height: 232px;
     }
   });
 
   .tablet ({
+    object-fit: contain;
+
     &--fat {
       width: 677px;
       height: 520px;
