@@ -87,3 +87,17 @@
     });
   }
 }
+
+.program-option__input:disabled + .program-option__label {
+  opacity: 0.3;
+}
+
+.program-option__input:hover + .program-option__label {
+  &::before {
+    border: 1px solid @special_grey-hover;
+  }
+}
+
+.program-option__input:focus + .program-option__label {
+  color: @basic_black;
+}

@@ -75,3 +75,17 @@
     });
   }
 }
+
+.more-products__input:disabled + .more-products__label {
+  opacity: 0.3;
+}
+
+.more-products__input:hover + .more-products__label {
+  &::before {
+    border: 1px solid @special_grey-hover;
+  }
+}
+
+.more-products__input:focus + .more-products__label {
+  color: @basic_black;
+}

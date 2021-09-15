@@ -5,10 +5,10 @@
   <title>HTML Academy: Кэт-энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <script src="js/script.min.js"></script>
 </head>
 <body class="page-body">
   <svg display="none" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@
 
   <header class="header">
     <div class="wrapper header__wrapper">
-      <a class="header__logo" href="#">
+      <a class="header__logo" href="index.html" title="На главную страницу">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/site_logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/site_logo/logo-tablet.svg">
@@ -36,7 +36,7 @@
         </picture>
         <img class="header__logo-name logo-name" src="img/site_logo/logo-text.svg" width="101" height="18" alt="cat energy">
       </a>
-      <nav class="header__nav nav nav--closed">
+      <nav class="header__nav nav nav-nojs nav--closed">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
@@ -235,10 +235,10 @@
               <dl class="product__list">
                 <div class="product__item">
                   <dt class="product__attribute">Масса</dt>
-                  <dd class="card__description">1000 г</dd>
+                  <dd class="product__description">1000 г</dd>
                 </div>
                 <div class="product__item">
-                  <dt class="card__attribute">Вкус</dt>
+                  <dt class="product__attribute">Вкус</dt>
                   <dd class="product__description">Гречка</dd>
                 </div>
                 <div class="product__item">
@@ -290,7 +290,7 @@
       </section>
       <section class="more-catalog">
         <h2 class="more-catalog__title  title title--green-line title--green-line--catalog">
-          <span class="wrapper title_text title_text--catalog">Дополнительные товары</span>
+          <span class="more-catalog__title-text wrapper title__text title__text--catalog">Дополнительные товары</span>
         </h2>
         <div class="more-catalog__wrapper wrapper">
           <ul class="more-catalog__list">
@@ -344,13 +344,13 @@
             </div>
           </div>
           <div class="contacts__map">
-              <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2140355230194!2d30.320930644442388!3d59.93894818036376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627301703264!5m2!1sru!2sru" width="320" height="362" style="border: 0;"  allowfullscreen="" loading="lazy"></iframe>
+              <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2140355230194!2d30.320930644442388!3d59.93894818036376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627301703264!5m2!1sru!2sru" width="320" height="362" style="border: 0;" title="ул. Большая Конюшенная,д.19/8,г.Санкт-Петербург" allowfullscreen="" loading="lazy"></iframe>
           </div>
       </section>
     </main>
     <footer class="footer">
       <div class="wrapper footer__wrapper">
-        <a class="footer__logo logo-name" href="#">
+        <a class="footer__logo logo-name" href="index.html"  title="На главную страницу">
           <img src="img/site_logo/logo-text.svg" width="128" height="24" alt="cat energy">
         </a>
         <ul class="footer__social social">

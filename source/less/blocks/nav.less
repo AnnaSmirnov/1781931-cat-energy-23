@@ -5,6 +5,16 @@
     background-color: transparent;
     position: static;
   });
+
+  &--nojs {
+    margin-left: -@padding--mobile;   // no-java-script
+    margin-right: -@padding--mobile;
+
+    .tablet({
+      margin-left: auto;
+      margin-right: 0;
+    });
+  }
 }
 
 .nav__list {
@@ -181,10 +191,10 @@
   }
 }
 
-.nav--nojs .nav__button {
+.nav--nojs .nav__button {  // no-java-script
   display: none;
 }
 
-.nav--nojs .nav__list {
+.nav--nojs .nav__list {   // no-java-script
   display: flex;
 }
