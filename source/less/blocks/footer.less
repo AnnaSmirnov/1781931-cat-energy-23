@@ -11,7 +11,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 150px;
+    min-height: 149px;
+    margin-top:-5px;
+  });
+
+  .desktop ({
+  margin-top: 0;
   });
 }
 
@@ -20,13 +25,16 @@
   justify-content: center;
 
   .mobile ({
-    padding-top: 39px;
+    padding-top: 40px;
     padding-bottom: 31px;
     border-bottom: 1px solid @special_border;
   });
 
   .tablet ({
-    margin-top: 0;
+    img {
+      padding-top: 2px;
+      height: 24px;
+    }
   });
 }
 
@@ -42,7 +50,6 @@
   .mobile ({
     border-top: 1px solid @special_border;
   });
-
 
   a {
     display: flex;
