@@ -1,14 +1,24 @@
 .nav {
   background-color: @basic_white;
 
+  .mobile ({
+  &--opened {
+    position: absolute;
+  }
+
+  &--closed {
+    position: absolute;
+  }
+  });
+
   .tablet ({
     background-color: transparent;
-    position: static;
   });
 
   &--nojs {
     margin-left: -@padding--mobile;   // no-java-script
     margin-right: -@padding--mobile;
+    position: static;
 
     .tablet({
       margin-left: auto;

@@ -58,12 +58,13 @@
   .desktop ({
     margin-right: 38px;
     justify-content: space-between;
+    width: 290px;
   });
 }
 
 .card-more__amount {
   .desktop({
-    text-align: start;
+    padding-top: 10px;
   });
 }
 
@@ -73,19 +74,25 @@
   });
 
   .desktop({
-    margin-left: 55px;
+    margin-left: 0;
+    padding-top: 10px;
   });
 }
 
 .card-more__button {
+  .font-oswald-uppercase( 16px,20px);
+  color: @basic_white;
   min-width: 100%;
+  min-height: 40px;
 
   .tablet ({
-    .font-oswald-uppercase( 16px, 20px);
+    .font-oswald-uppercase( 16px,0);
     color: @basic_white;
   });
 
   .desktop({
+    .font-oswald-uppercase( 16px,20px);
+    color: @basic_white;
     min-width: 244px;
   });
 }

@@ -21,8 +21,12 @@
   margin-bottom: 36px;
 
   .tablet ({
-    padding-left: 40px;
+    padding-left: 30px;
     margin-bottom: 76px;
+  });
+
+  .desktop ({
+    padding-left: 70px;
   });
 }
 
@@ -30,8 +34,8 @@
   .wrapper-form();
   .font-oswald(36px,36px);
   border-top: 1px solid @special_border;
-  padding-top: 24px;
-  padding-bottom: 40px;
+  padding-top: 26px;
+  padding-bottom: 38px;
   text-align: left;
 
   .tablet ({
@@ -50,7 +54,7 @@
 .form__text {
   .wrapper-form();
   .font-oswald-uppercase(14px,18px);
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   text-align: left;
 
   .tablet ({
@@ -79,12 +83,12 @@
   .wrapper-form();
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   .tablet ({
     flex-direction: row;
     align-items: center;
-    margin-bottom: 72px;
+    margin-bottom: 75px;
   });
 
   .desktop ({
@@ -93,12 +97,16 @@
 }
 
 .form__button {
+  .font-oswald-uppercase(16px,20px);
+  color: @basic_white;
   border: none;
   width: 100%;
 
   .tablet ({
+    .font-oswald-uppercase(20px,0);
+    color: @basic_white;
     width: 285px;
-    height: 52px;
+    min-height: 52px;
   });
 
   .desktop ({
@@ -107,7 +115,7 @@
 }
 
 .form__note {
-  .font-arial(14px,18px);
+  .font-arial(14px,16px);
 
   .mobile ({
     margin-top: 21px;

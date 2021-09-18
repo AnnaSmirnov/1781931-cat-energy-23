@@ -32,20 +32,21 @@
 
 .product-show__title {
   .font-oswald-uppercase(16px,20px);
+  color: @special_black;
   text-align: center;
   margin-top: 74px;
   margin-bottom: 8px;
 
   .tablet ({
-    .font-oswald-uppercase(20px,24px);
+    .font-oswald-uppercase(20px,22px);
+    color: @special_black;
     max-width: 150px;
-    margin-top: 156px;
+    margin-top: 158px;
     margin-bottom: 23px;
   });
 
   .desktop ({
-    .font-oswald-uppercase(20px,22px);
-    margin-top: 160px;
+    margin-top: 156px;
   });
 }
 
@@ -57,14 +58,14 @@
 
   .tablet ({
     .font-arial(16px,18px);
-    margin-bottom: 85px;
+    margin-bottom: 88px;
   });
 }
 
 .product-show__button {
   .font-oswald-uppercase(16px,20px);
-  background-color: @basic_grey;
   color: @special_dark-grey;
+  background-color: @basic_grey;
   align-self: stretch;
 
   &:hover {
@@ -76,6 +77,9 @@
   }
 
   .tablet({
+    .font-oswald-uppercase(16px,0);
+    color: @special_dark-grey;
     margin-top: auto;
+    min-height: 40px;
   });
 }
