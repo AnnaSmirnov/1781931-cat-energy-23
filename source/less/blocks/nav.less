@@ -16,8 +16,8 @@
   });
 
   &--nojs {
-    margin-left: -@padding--mobile;   // no-java-script
-    margin-right: -@padding--mobile;
+    margin-left: -20px;   // no-java-script
+    margin-right: -20px;
     position: static;
 
     .tablet({
@@ -29,7 +29,6 @@
 
 .nav__list {
   .list();
-  border-bottom: 1px solid @border_menu;
   display: flex;
   flex-direction: column;
 
@@ -48,6 +47,8 @@
 .nav__item {
   border-top: 1px solid @border_menu;
   z-index: 30;
+  margin-right: -20px;
+  margin-left: -20px;
 
   .tablet({
     width: auto;
@@ -143,7 +144,6 @@
   cursor: pointer;
   background: none;
   border: none;
-
 
   .tablet ({
     display: none;
